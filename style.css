@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #3cabdf, #a228db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  width: clamp(300px, 40%, 400px);
+  background-color: #fff;
+  padding: clamp(1rem, 2vw, 2rem);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.login-heading {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.login-heading h1 {
+  text-align: center;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.login-main {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.input-wrapper label {
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
+}
+
+.input-wrapper input {
+  border: 1px solid #333;
+  padding: clamp(0.5rem, 2vw, 1rem);
+}
+
+.forgot-password {
+  color: #3cabdf;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-weight: bold;
+}
+
+.login-btn {
+  margin-top: clamp(10px, 2vw, 20px);
+}
+
+.login-btn button {
+  width: 100%;
+  padding: clamp(10px, 2vw, 15px);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-image: linear-gradient(to right, #3cabdf, #a228db);
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.login-btn button:active {
+  background-image: linear-gradient(to right, #6bceec, #d056db);
+}
+
+.signup {
+  margin-top: clamp(10px, 2vw, 12px);
+  text-align: center;
+}
+
+.signup * {
+  font-size: clamp(0.9rem, 1.5vw, 1.15rem);
+}
+
+.signup a {
+  color: #3cabdf;
+}
